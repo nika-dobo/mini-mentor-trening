@@ -1,7 +1,15 @@
 
-names = ["Alice", "Bob", "Charlie", "David", "Eve"]
-for i in names:
-    print(i[0])
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+n = int(input("enter lenght: "))
+
+user_list = []
+
+i = 0
+
+while i < n:
+    string = "enter element  #" + str(i + 1) + ": "
+    user_list.append(input(string))
+    i += 1
+
+print(user_list)
 
