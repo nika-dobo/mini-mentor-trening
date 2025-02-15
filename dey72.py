@@ -1,15 +1,10 @@
 
 
-n = int(input("enter lenght: "))
+name = input("enter name: ")
 
-user_list = []
-
-i = 0
-
-while i < n:
-    string = "enter element  #" + str(i + 1) + ": "
-    user_list.append(input(string))
-    i += 1
-
-print(user_list)
-
+if len(name) == 4:
+    print("name lenght = 4")
+elif len(name) == 6:
+    print("name lenght = 6")   
+else:# != 4 and != 6
+    print("name lenght != 4 and !=6")    
