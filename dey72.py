@@ -1,7 +1,9 @@
-year = int(input("შეიყვანეთ წელი: "))
+list = ["string", 20, 33.3, True]
+
+num =int(input("entr:"))
+
+list.pop(num)
+
+print(list)
 
 
-century = (year - 1) // 100 + 1
-
-
-print(f"{year} წელი არის {century}-ე საუკუნე.")
