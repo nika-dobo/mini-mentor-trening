@@ -1,10 +1,4 @@
 
-
-def num(x,y):
-    print(x+y)
-
-number1 = int(input("enter num: "))
-number2 = int(input("enter num: "))
-
-num(number2,number1)
-
+row = 10
+for i in range(1, row + 1):
+    print("*" * i)
