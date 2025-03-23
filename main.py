@@ -1,3 +1,8 @@
 
-sum_num = sum(range(1, 10+1))
-print(sum_num)
+str = "t as dsa asdf sdfs sdf j"
+
+str2 = ""
+
+for i in str:
+    if i != " ":
+        
