@@ -1,9 +1,4 @@
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-height = float(input("Enter your height in cm: "))
-weight = float(input("Enter your weight in kg: "))
-name = input("Enter your name: ")
+length = int(input("Enter the length of the list: "))
+width = int(input("Enter the width of the list: "))
 
-print(name + " " + str(age) + " " + str(height) + " " + str(weight))
-
-
+print(length * width)
