@@ -1,3 +1,3 @@
-mylist = ['nowplaying', 'PBS', 'PBS', 'nowplaying', 'job', 'debate', 'thenandnow']
-myset = set(mylist)
-print(myset)
+list = [ [ 7,9,8,6,2 ], [6,3,5,4,3], [5,8,7,4,5] ]
+
+print(list[0][1])
