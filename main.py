@@ -1,3 +1,7 @@
-list = [ [ 7,9,8,6,2 ], [6,3,5,4,3], [5,8,7,4,5] ]
 
-print(list[0][1])
+sum = 0
+
+for i in range(100):
+    sum += i
+
+print(sum)
