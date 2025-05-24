@@ -1,3 +1,22 @@
-html{
-    background-color: rgb(16, 16, 199);
+/* font-weigth ---> min - 100, max - 900 */
+/* text-decoration ---> (underline, overline, line-through), color, (solid, wevy, dotted, dashed, double) */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+DK+Loopet:wght@100..400&family=Playwrite+HU:wght@100..400&display=swap");
+
+.h1 {
+  font-family: "Playwrite HU", cursive;
+  font-weight: 400;
 }
+.h2 {
+  font-family: "Dancing Script", cursive;
+}
+.h3 {
+  font-family: "Playwrite DK Loopet", cursive;
+  text-decoration: dashed overline ;
+}
+/*
+.h4{
+    text-decoration: underline dashed;
+}
+.h5{
+    text-decoration: overline double;
+} */
