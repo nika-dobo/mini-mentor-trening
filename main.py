@@ -1,26 +1,14 @@
 
 
-list = [
-        23,
-        43,
-        54,
-        234,
-        34.5,
-        34.6,
-        2, 
-        6.4, 
-        "str",
-        "kivi",
-        True, 
-        False,
-        [
-            "asda",
-            "das",
-            23,
-            5.5
-        ]
-]
+number = [0,1,2,3,4,5,6,7,8,9,10,"90"]
+
+num = int(input("enter your number: "))
 
 
 
-print(list)
+number.append(num)
+number.remove("90")
+number.pop(7)
+
+
+print(number)
