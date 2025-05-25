@@ -1,23 +1,26 @@
-id = int(input("enter num:"))
 
 
-name=""
-match id:
-    case 1: # if id == 1:
-        name = "Mercury"
-    case 2: # elif id == 2:
-        name = "Venus"
-    case 3: 
-        name = "Earth"
-    case 4: 
-        name = "Mars"
-    case 5: 
-        name = "Jupiter"
-    case 6: 
-        name = "Saturn"
-    case 7: 
-        name = "Uranus"  
-    case 8: 
-        name = "Neptune"
-print(name)
+list = [
+        23,
+        43,
+        54,
+        234,
+        34.5,
+        34.6,
+        2, 
+        6.4, 
+        "str",
+        "kivi",
+        True, 
+        False,
+        [
+            "asda",
+            "das",
+            23,
+            5.5
+        ]
+]
 
+
+
+print(list)
