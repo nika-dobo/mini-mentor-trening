@@ -6,15 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
 
+        table {
+            width: 70%;
+            height: 70%;
+            font-size: xx-large;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 10px solid rebeccapurple;
+            border-collapse: collapse;
+            border-radius: 50px;
+        }
+
+        .geo {
+            background-color: blue;
+            width: 70%;
+            height: 50%;
+        }
+
+        .usa {
+            background-color: red;
+        }
+
+        th {
+            background-color: bisque;
+            border: 5px solid rgb(255, 0, 0);
+
+        }
+
+        td {
+            background-color: chocolate;
+            border: 5px solid rgb(0, 255, 76);
+        }
+
+        .colspan {
+            background-color: darkmagenta;
+        }
+    </style>
 </head>
 
 <body>
 
-    <form action="">
-        <label for=""></label> 
-        <input type="button" name="" id="" value="aaa">
-    </form>
+    <table>
+        <tr>
+            <th>country</th>
+            <th>year</th>
+        </tr>
+        <tr>
+            <td class="geo">
+                georgia<br>
+                width: 70%;<br>
+                height: 50%;
+            </td>
+            <td rowspan="2">rowspan - 2. height</td>
+        </tr>
+        <tr>
+            <td class="usa">usa</td>
+
+        </tr>
+        <tr>
+            <td class="colspan" colspan="2">colspan - 2. width</td>
+        </tr>
+    </table>
 
 </body>
 
