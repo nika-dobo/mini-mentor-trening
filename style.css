@@ -1,0 +1,22 @@
+body {
+  height: 10000px;
+}
+
+.d1 {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(0, 251, 33);
+  position: sticky;
+  top: 0px;
+  right: 350px;
+  margin-top: 100px;
+}
+.d2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
