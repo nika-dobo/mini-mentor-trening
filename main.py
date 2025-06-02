@@ -1,4 +1,9 @@
 
 
-for i in range(0,100,13):
-    print(i-2)
+
+
+def dna_to_rna(dna):
+    return dna.replace('T', 'U')
+
+
+print(dna_to_rna("aT rraw TAS WASDWDWD T"))
