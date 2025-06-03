@@ -1,9 +1,2 @@
-
-
-
-
-def dna_to_rna(dna):
-    return dna.replace('T', 'U')
-
-
-print(dna_to_rna("aT rraw TAS WASDWDWD T"))
+word = 'vehicle'
+print(word.find())
