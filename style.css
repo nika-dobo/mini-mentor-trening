@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  height: 500vh;
+}
+
+.back {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background: url(3VXkwGHtMysBd7ZnhxYpqyJiBOyvyF.jpg);
+  background-size: cover;
+}
+
+.back2 {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background: url(img_5df2fa99a052c8-93688535-88046832.gif);
+  background-size: cover;
+}
