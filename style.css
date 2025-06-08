@@ -1,29 +1,16 @@
-h1 {
-  font-size: 50px;
-  color: red;
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-evenly;
 }
 
-h1:hover {
-  color: blue;
-  text-decoration: underline;
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-h1:active {
-  color: yellow;
-  text-decoration: underline red dashed;
-}
-
-/* 
-hover - During "hover", when the user moves the mouse cursor over an HTML element,
-our specified design will be assigned what we wrote in "hover".{
-selector:hover{
-declaration
-}
-}
-
-active - Whatever design we write in the CSS rule when "active" is selected, 
-that design will be applied when clicked.{
-selector:active{
-declaration
-}
-}
-*/
