@@ -1,11 +1,29 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap");
-
 h1 {
-  color: #f2a6f3;
-  background-color: rgb(211, 221, 123);
-  text-decoration: overline red dashed;
-  text-shadow: 5px 5px 20px rgb(255, 0, 0);
-  text-transform: uppercase;
-  font-family: "Edu QLD Hand", cursive;
+  font-size: 50px;
+  color: red;
 }
+
+h1:hover {
+  color: blue;
+  text-decoration: underline;
+}
+h1:active {
+  color: yellow;
+  text-decoration: underline red dashed;
+}
+
+/* 
+hover - During "hover", when the user moves the mouse cursor over an HTML element,
+our specified design will be assigned what we wrote in "hover".{
+selector:hover{
+declaration
+}
+}
+
+active - Whatever design we write in the CSS rule when "active" is selected, 
+that design will be applied when clicked.{
+selector:active{
+declaration
+}
+}
+*/
