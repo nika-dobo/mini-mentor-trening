@@ -1,196 +1,39 @@
-/* Base styling */
 body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #0e0b24;
-  color: #fff;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 0;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-p {
-  font-weight: 300;
-  color: #ccc;
-}
-
-.btn {
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.btn.primary {
-  background: #ff00cc;
-  color: white;
-}
-
-.btn.secondary {
-  background: #00e0ff;
-  color: white;
-}
-
-/* Header */
-.header {
-  background: #0b0921;
-  padding: 20px 0;
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 999;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header .logo {
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #fff;
-}
-
-.header nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding-top: 120px;
-  background: url("background-hero.jpg") no-repeat center center / cover;
-  min-height: 100vh;
-}
-
-/* Sections */
-section {
-  text-align: center;
-}
-
-.countdown {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-size: 1.5em;
-}
-
-.app-buttons a {
-  margin: 0 10px;
-  background: #fff;
-  color: #000;
-  padding: 10px 15px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.convert-box {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 30px;
+  background-color: black;
 }
 
-.convert-box input {
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  width: 100px;
-  text-align: center;
+div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px black solid;
+  border-top: 3px white solid;
+  animation: rotate 1s infinite;
 }
 
-.arrow {
-  font-size: 2em;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+    border-top: 5px wheat solid;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.roadmap ul {
-  list-style: none;
-  padding: 0;
-  line-height: 2;
-}
-
-.testimonials blockquote {
-  font-style: italic;
-  margin: 30px auto;
-  max-width: 600px;
-}
-
-.news-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.news-cards .card {
-  background: #1b153a;
-  padding: 20px;
-  border-radius: 15px;
-  width: 300px;
-}
-
-.footer {
-  background: #0b0921;
-  color: #ccc;
-  padding: 60px 0;
-}
-
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer h3,
-.footer h4 {
-  color: #fff;
-}
-
-.footer .social a {
-  margin-right: 10px;
-  color: #ccc;
-  text-decoration: none;
-}
-
-.footer form input[type="email"] {
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  margin-top: 10px;
-  width: 200px;
-}
-
-.footer form button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 20px;
-  background: #ff00cc;
-  color: white;
-  margin-left: 10px;
-  font-weight: 600;
+@keyframes move {
+  0% {
+    transform: translate(0px);
+  }
+  100%{
+    transform: translate(500px);
+  }
 }
