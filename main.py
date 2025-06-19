@@ -1,5 +1,4 @@
 
 
-
-def hello(name="gio", x = 5):
-    print("hello", name)
+for i in range(1,100,13):
+    print(i)
