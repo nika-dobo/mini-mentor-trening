@@ -6,18 +6,24 @@
 
 body{
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
-.p1{
-
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-radius: 25px;
+  transform: scalex(0);
+  background: red;
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
-.p1::before{
-  content: "be cafrul";
-  color: red;
+h2:hover::before {
+  transform: scalex(1);
+  transform-origin: left;
 }
