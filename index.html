@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=დივ, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+  <meta charset="UTF-8">
+  <title>HTML Usage Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      background-color: #1a0c2c;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    canvas {
+      max-width: 700px;
+      margin: 50px auto;
+    }
+  </style>
 </head>
-
 <body>
 
-    <h2>animation</h2>
+<h2>HTML Usage Over Months</h2>
+<canvas id="htmlChart"></canvas>
+
+<script>
+  const ctx = document.getElementById('htmlChart').getContext('2d');
+
+  const gradient1 = ctx.createLinearGradient(0, 0, 0, 400);
+  gradient1.addColorStop(0, 'rgba(173, 0, 255, 0.6)');
+  gradient1.addColorStop(1, 'rgba(173, 0, 255, 0.05)');
+
+  const gradient2 = ctx.createLinearGradient(0, 0, 0, 400);
+  gradient2.addColorStop(0, 'rgba(0, 255, 255, 0.6)');
+  gradient2.addColorStop(1, 'rgba(0, 255, 255, 0.05)');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        label: 'Web Development',
+        data: [500, 200, 300, 350, 450, 500, 400, 380, 390, 370, 420, 480],
+        fill: true,
+        backgroundColor: gradient1,
+        borderColor: '#a700ff',
+        tension: 0.4
+      }, {
+        label: 'Other HTML Use',
+        data: [480, 180, 250, 300, 320, 330, 310, 270, 200, 230, 250, 220],
+        fill: true,
+        backgroundColor: gradient2,
+        borderColor: '#00ffff',
+        tension: 0.4
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      plugins: {
+        legend: {
+          labels: {
+            color: '#fff'
+          }
+        }
+      }
+    }
+  });
+</script>
 
 </body>
-
 </html>
