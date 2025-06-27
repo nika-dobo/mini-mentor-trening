@@ -2,11 +2,7 @@
 
 
 
-def even_or_odd(num = 0):
-    if num % 2 == 0:
-        return "even"
-    else:
-        return "odd"
 
-print(even_or_odd(5))
+for i in range(0,100,13):
+    print(i - 2)
 
